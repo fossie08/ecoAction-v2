@@ -14,9 +14,9 @@ def about_us():
 def contact():
     return render_template("contact.html")
 
-@app.route("/products")
-def products():
-    return render_template("products.html")
+@app.route("/portfolio")
+def portfolio():
+    return render_template("portfolio.html")
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")

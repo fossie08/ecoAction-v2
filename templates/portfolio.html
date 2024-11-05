@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Action</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/static/logo.png" alt="Eco-Friendly Supplies Logo">
+                <h1>Eco-Action</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-section" id="hero1">
+            <div class="hero-text">
+            <h1>Plastic Waste</h1>
+            <p>Plastic waste is one of the biggest environmental challenges we face today. Each year, millions of tons of plastic end up in our oceans, rivers, and landfills, where it can take centuries to decompose. The impact of plastic waste is devastating for marine life, animals on land, and ultimately, humans, as plastic breaks down into microplastics that enter the food chain.</p>
+            <p>Reducing plastic waste is essential to protecting our planet. By choosing reusable alternatives, avoiding single-use plastics, and supporting brands that prioritize sustainable packaging, we can make a meaningful impact. Join us in advocating for reduced plastic production, improved recycling systems, and greater awareness about the harm caused by plastic pollution.</p>
+            <h2>How You Can Help:</h2>
+            <ul>
+                <li>Say no to single-use plastics and carry reusable bags, bottles, and utensils.</li>
+                <li>Support initiatives that promote plastic bans or better recycling infrastructure.</li>
+                <li>Get involved in local clean-up events to help remove plastic waste from beaches, parks, and streets.</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="hero-section" id="hero2">
+            <div class="hero-text">
+            <h1>Renewable Energy</h1>
+            <p>Renewable energy is key to fighting climate change and reducing our reliance on fossil fuels. Unlike coal, oil, and gas, renewable sources like solar, wind, hydro, and geothermal energy provide clean power that doesn't pollute our atmosphere. Embracing renewable energy is vital to ensuring a healthier planet and a sustainable future.</p>
+            <p>Transitioning to renewables also means economic benefits, as they create new jobs, drive technological advancements, and lower long-term energy costs. However, to make this shift, we need policies that support renewable energy, incentivize innovation, and encourage communities to adopt greener technologies.</p>
+            <h2>How You Can Help:</h2>
+            <ul>
+                <li>Advocate for policies that promote the use of renewable energy.</li>
+                <li>Support businesses that operate on renewable energy or have green initiatives.</li>
+                <li>Consider switching to a green energy provider for your home or community.</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="hero-section" id="hero3">
+            <div class="hero-text">
+            <h1>Afforestation</h1>
+            <p>Afforestation—the planting of trees on barren land—is a powerful way to combat climate change, protect biodiversity, and restore ecosystems. Trees are nature’s lungs, absorbing carbon dioxide and releasing oxygen, while also providing habitat for countless species and preventing soil erosion.</p>
+            <p>Afforestation not only helps mitigate climate change but also improves soil quality, water retention, and air purity. By supporting afforestation efforts, we can help revitalize degraded land, preserve wildlife, and create a sustainable environment for future generations.</p>
+            <h2>How You Can Help:</h2>
+            <ul>
+                <li>Participate in local or global tree-planting initiatives.</li>
+                <li>Advocate for policies that protect forests and encourage afforestation projects.</li>
+                <li>Reduce your consumption of products linked to deforestation, like unsustainable palm oil and timber.</li>
+            </ul>
+            </div>
+        </div>
+
+        <script>
+            const sections = document.querySelectorAll('.hero-section');
+
+            const options = {
+                root: null,
+                threshold: 0.1,
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        </script>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Eco-Action & Ollie Foster. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
