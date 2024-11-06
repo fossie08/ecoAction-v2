@@ -161,21 +161,153 @@ nav ul li a:hover {
     background-color: #388E3C;
 }
 
-/* About Section */
-.about {
-    padding: 80px 0;
-    background-color: #E8F5E9;
-    text-align: center;
-}
-
 /* Footer */
 footer {
-    background: linear-gradient(to right, #4CAF50, #66BB6A);
+    background: #333;
     color: white;
     padding: 15px 0;
     text-align: center;
     bottom: 0%;
 }
+
+/* Mission, Vision, Team, and Call-to-Action Sections */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.mission, .vision {
+    background-color: #f9f9f9;
+    height: 100vh;
+}
+
+.mission h2, .vision h2, .team h2 {
+    font-size: 2.2rem;
+    color: #27a32b;
+    margin-bottom: 20px;
+}
+
+.mission p, .vision p, .team p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mission and Vision Hero Sections */
+.hero-mission, .hero-vision {
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero-mission {
+    background: url('/static/ocean.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.hero-vision {
+    background: url('/static/rainforest.webp') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.hero-mission h2, .hero-vision h2, .call-to-action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD54F;
+}
+
+.hero-mission p, .hero-vision p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    color: white;
+    margin: 0 auto;
+}
+
+
+/* Team Section */
+.team {
+    background-color: #e3f2fd;
+}
+
+.team .team-member {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.team .team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team .team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team .team-member p {
+    color: #777;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+    background: linear-gradient(to right, #4CAF50, #66BB6A);
+    color: white;
+    padding: 50px 20px;
+
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin: 15px auto;
+    max-width: 700px;
+}
+
+.cta-button {
+    background-color: #FFD54F;
+    color: #333;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #FFC107;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .team .team-member {
+        width: 100%;
+    }
+}
+
 
 /* Animations */
 @keyframes fadeIn {

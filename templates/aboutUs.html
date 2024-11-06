@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Action</title>
+    <title>About Us - Eco-Action</title>
     <link rel="stylesheet" href="/static/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -25,12 +25,48 @@
         </div>
     </header>
     <main>
-    <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are dedicated to promoting sustainable living through eco-friendly products. Our team is passionate about the environment and strives to make a positive impact in our community.</p>
-        </div>
-    </section>
+        <main>
+            <section class="hero-mission">
+                <div class="container">
+                    <h2>Our Mission</h2>
+                    <p>To inspire sustainable living by providing high-quality, eco-friendly products that make a positive difference.</p>
+                </div>
+            </section>
+        
+            <section class="hero-vision">
+                <div class="container">
+                    <h2>Our Vision</h2>
+                    <p>We envision a world where every individual contributes to a healthier planet through conscious choices and eco-friendly living.</p>
+                </div>
+            </section>
+        </main>
+        
+
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="team-member">
+                    <img src="/static/ceo.jpg" alt="Jane Doe - CEO">
+                    <h3>Jane Doe</h3>
+                    <p>CEO & Founder</p>
+                    <p>Jane is a passionate environmentalist with over 15 years of experience in sustainable business practices.</p>
+                </div>
+                <div class="team-member">
+                    <img src="/static/projectmanager.webp" alt="John Smith - Product Manager">
+                    <h3>John Smith</h3>
+                    <p>Product Manager</p>
+                    <p>John is dedicated to sourcing the highest quality, eco-friendly products to meet our clients' needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Join Us in Making a Difference</h2>
+                <p>Whether you're a business or an individual, we invite you to join our mission to create a more sustainable world.</p>
+                <a href="{{ url_for('contact') }}" class="cta-button">Get Involved</a>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">

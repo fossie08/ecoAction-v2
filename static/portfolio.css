@@ -15,7 +15,7 @@
 
 .hero-text {
     border-radius: 25px;
-    background: #4CAF50;
+    background: #a56d3f;
     padding: 20px;
 
 }
@@ -70,4 +70,10 @@
 .visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+    }
 }
