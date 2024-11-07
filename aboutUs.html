@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Eco-Action</title>
-    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="/static/logo.png" alt="Eco-Friendly Supplies Logo">
+                <img src="images/logo.png" alt="Eco-Friendly Supplies Logo">
                 <h1>Eco-Action</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="{{ url_for('index') }}">Home</a></li>
-                    <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,13 +46,13 @@
             <div class="container">
                 <h2>Meet Our Team</h2>
                 <div class="team-member">
-                    <img src="/static/ceo.jpg" alt="Jane Doe - CEO">
+                    <img src="images/ceo.jpg" alt="Jane Doe - CEO">
                     <h3>Jane Doe</h3>
                     <p>CEO & Founder</p>
                     <p>Jane is a passionate environmentalist with over 15 years of experience in sustainable business practices.</p>
                 </div>
                 <div class="team-member">
-                    <img src="/static/projectmanager.webp" alt="John Smith - Product Manager">
+                    <img src="images/projectmanager.webp" alt="John Smith - Product Manager">
                     <h3>John Smith</h3>
                     <p>Product Manager</p>
                     <p>John is dedicated to sourcing the highest quality, eco-friendly products to meet our clients' needs.</p>
@@ -64,7 +64,7 @@
             <div class="container">
                 <h2>Join Us in Making a Difference</h2>
                 <p>Whether you're a business or an individual, we invite you to join our mission to create a more sustainable world.</p>
-                <a href="{{ url_for('contact') }}" class="cta-button">Get Involved</a>
+                <a href="contact.html" class="cta-button">Get Involved</a>
             </div>
         </section>
     </main>

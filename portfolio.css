@@ -56,15 +56,15 @@
 }
 
 .hero-section:nth-child(1) {
-    background-image: url("/static/image5.jpg");
+    background-image: url("images/image5.jpg");
 }
 
 .hero-section:nth-child(2) {
-    background-image: url("/static/image2.jpg");
+    background-image: url("images/image2.jpg");
 }
 
 .hero-section:nth-child(3) {
-    background-image: url("/static/image4.jpg");
+    background-image: url("images/image4.jpg");
 }
 
 .visible {
