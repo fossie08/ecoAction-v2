@@ -17,41 +17,48 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="aboutUs.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="videos/video0.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
             <div class="container">
                 <h2>Eco-Action for a Greener Tomorrow</h2>
-                <p>Our mission is to improve the environment for everyone. We believe that everyone can make a difference, no matter how small. Join us on our journey to a more sustainable future!</p>
+                <p>Our mission is to improve the environment for everyone. Join us on our journey to a more sustainable future!</p>
+                <button id="scroll-down" class="cta-button">Explore Portfolio</button>
             </div>
         </section>
+        
+          
 
-        <section class="featured-portfolios">
+        <section id="portfolio" class="featured-portfolios section-hidden">
             <div class="container">
                 <h2>Our Portfolio</h2>
                 <br>
                 <div class="portfolio-grid">
-                    <div class="portfolio">
+                    <div class="portfolio" data-portfolio="1">
                         <img src="images/image1.png" alt="plastic bottles">
                         <h3>Plastic waste</h3>
-                        <p>Our projects around the world on tidying up the rivers</p>
+                        <p>Projects around the world sorting out the rivers</p>
                         <a href="portfolio.html#hero1"><button class="learn-more">Learn More</button></a>
                     </div>
-                    <div class="portfolio">
+                    <div class="portfolio" data-portfolio="2">
                         <img src="images/image2.jpg" alt="wind turbines">
                         <h3>Renewable energy</h3>
                         <p>The push for more renewable energy sources</p>
                         <a href="portfolio.html#hero2"><button class="learn-more">Learn More</button></a>
                     </div>
-                    <div class="portfolio">
+                    <div class="portfolio" data-portfolio="3">
                         <img src="images/image3.jpg" alt="aforestation">
                         <h3>Planting trees</h3>
                         <p>Our journey to planting more trees</p>
@@ -64,11 +71,12 @@
     <br>
     <br>
     <br>
-    <br>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Eco-Action & Ollie Foster. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Eco-Action & Ollie Foster. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
