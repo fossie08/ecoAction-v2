@@ -258,7 +258,11 @@ section {
     background-color: #e3f2fd;
 }
 
-.team .team-member {
+.quiz {
+    background-color: #ececec;
+}
+
+.team .team-member .quiz{
     display: inline-block;
     width: calc(50% - 20px);
     margin: 20px 10px;
@@ -357,12 +361,13 @@ section {
 }
 
 /* Button Hover */
+/*
 button:hover {
     background-color: #45a049;
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
-
+*/
 /* Portfolio Hover */
 .portfolio:hover {
     transform: scale(1.05);

@@ -83,6 +83,7 @@ function loadQuestion() {
         answerButton.onclick = () => checkAnswer(index);
 
         answerItem.appendChild(answerButton);
+        answerItem.appendChild(document.createElement("br"));
         answersList.appendChild(answerItem);
     });
 
